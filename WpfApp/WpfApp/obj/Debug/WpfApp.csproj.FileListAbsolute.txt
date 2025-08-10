@@ -43,3 +43,4 @@ C:\Julio\Teste Técnico – Desenvolvedor C#\WpfApp\WpfApp\obj\Debug\WpfApp.cspr
 C:\Julio\Teste Técnico – Desenvolvedor C#\WpfApp\WpfApp\obj\Debug\WpfApp.csproj.CopyComplete
 C:\Julio\Teste Técnico – Desenvolvedor C#\WpfApp\WpfApp\obj\Debug\WpfApp.exe
 C:\Julio\Teste Técnico – Desenvolvedor C#\WpfApp\WpfApp\obj\Debug\WpfApp.pdb
+C:\Julio\Teste Técnico – Desenvolvedor C#\WpfApp\WpfApp\obj\Debug\WpfApp.csproj.AssemblyReference.cache
