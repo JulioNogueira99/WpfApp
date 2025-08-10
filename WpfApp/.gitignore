@@ -1,0 +1,89 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# DotCover
+*.dotCover
+
+# Coverage Results
+coverage.*
+
+# Test Results
+TestResults/
+
+# Publish output
+publish/
+
+# Logs
+*.log
+
+# Web related files
+wwwroot/
+
+# JetBrains Rider settings
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Others
+*.dbmdl
+*.bak
+*.backup
+*.mdf
+*.ldf
+
+# SQLite
+*.sqlite
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Backup & report files
+*.cab
+*.dmp
+*.stackdump
+
+# Others
+*.cache
+*.pdb
+*.log
+*.vspscc
