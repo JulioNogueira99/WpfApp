@@ -1,0 +1,65 @@
+[
+  {
+    "Id": 1,
+    "Nome": "Cimento CP II 50kg",
+    "Codigo": "CIM50KG",
+    "Valor": 28.90,
+    "Validar": true
+  },
+  {
+    "Id": 2,
+    "Nome": "Areia Média (m³)",
+    "Codigo": "AREIAM3",
+    "Valor": 75.00,
+    "Validar": true
+  },
+  {
+    "Id": 3,
+    "Nome": "Tijolo Cerâmico 6 Furos",
+    "Codigo": "TIJ6F",
+    "Valor": 0.80,
+    "Validar": true
+  },
+  {
+    "Id": 4,
+    "Nome": "Cal Hidratado 20kg",
+    "Codigo": "CAL20KG",
+    "Valor": 18.50,
+    "Validar": true
+  },
+  {
+    "Id": 5,
+    "Nome": "Tela Metálica 1m x 3m",
+    "Codigo": "TELA13",
+    "Valor": 55.00,
+    "Validar": true
+  },
+  {
+    "Id": 6,
+    "Nome": "Tinta Acrílica 18L",
+    "Codigo": "TINTA18L",
+    "Valor": 150.00,
+    "Validar": true
+  },
+  {
+    "Id": 7,
+    "Nome": "Tubulação PVC 100mm (metro)",
+    "Codigo": "PVC100",
+    "Valor": 12.00,
+    "Validar": true
+  },
+  {
+    "Id": 8,
+    "Nome": "Parafuso 3,5mm (pacote 100 unidades)",
+    "Codigo": "PARA3500",
+    "Valor": 25.00,
+    "Validar": true
+  },
+  {
+    "Id": 9,
+    "Nome": "Ripão 5m (unidade)",
+    "Codigo": "RIP5M",
+    "Valor": 15.00,
+    "Validar": true
+  }
+]

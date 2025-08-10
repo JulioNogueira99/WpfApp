@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfApp.Views"
+        Title="Sistema de Cadastro"
+        Width="900" Height="600"
+        MinWidth="700" MinHeight="500"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <!-- Menu lateral -->
+            <Border DockPanel.Dock="Left" Width="180" Background="#DDD" Padding="10">
+                <StackPanel>
+                    <Button Content="Pessoas" Margin="0,5" Click="BtnPessoas_Click" Height="35"/>
+                    <Button Content="Produtos" Margin="0,5" Click="BtnProdutos_Click" Height="35"/>
+                    <Button Content="Pedidos" Margin="0,5" Click="BtnPedidos_Click" Height="35"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Área principal -->
+            <ContentControl x:Name="MainContent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </DockPanel>
+    </Grid>
+</Window>

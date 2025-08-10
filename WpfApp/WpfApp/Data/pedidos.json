@@ -1,0 +1,222 @@
+[
+  {
+    "Id": 1,
+    "Pessoa": {
+      "Id": 1,
+      "Nome": "Julio Nogueira",
+      "CPF": "00878495266",
+      "Endereco": "Rua 2, 86"
+    },
+    "Produtos": [
+      {
+        "Produto": {
+          "Id": 9,
+          "Nome": "Ripão 5m (unidade)",
+          "Codigo": "RIP5M",
+          "Valor": 15.00
+        },
+        "Quantidade": 10,
+        "ValorTotal": 150.00
+      },
+      {
+        "Produto": {
+          "Id": 3,
+          "Nome": "Tijolo Cerâmico 6 Furos",
+          "Codigo": "TIJ6F",
+          "Valor": 0.80
+        },
+        "Quantidade": 50,
+        "ValorTotal": 40.00
+      },
+      {
+        "Produto": {
+          "Id": 1,
+          "Nome": "Cimento CP II 50kg",
+          "Codigo": "CIM50KG",
+          "Valor": 28.90
+        },
+        "Quantidade": 1,
+        "ValorTotal": 28.90
+      }
+    ],
+    "ValorTotal": 218.90,
+    "DataVenda": "2025-08-10T18:34:04.1320328-03:00",
+    "FormaPagamento": 1,
+    "Status": 3
+  },
+  {
+    "Id": 2,
+    "Pessoa": {
+      "Id": 1,
+      "Nome": "Julio Nogueira",
+      "CPF": "00878495266",
+      "Endereco": "Rua 2, 86"
+    },
+    "Produtos": [
+      {
+        "Produto": {
+          "Id": 1,
+          "Nome": "Cimento CP II 50kg",
+          "Codigo": "CIM50KG",
+          "Valor": 28.90
+        },
+        "Quantidade": 1,
+        "ValorTotal": 28.90
+      }
+    ],
+    "ValorTotal": 28.90,
+    "DataVenda": "2025-08-10T18:53:51.7839829-03:00",
+    "FormaPagamento": 2,
+    "Status": 1
+  },
+  {
+    "Id": 3,
+    "Pessoa": {
+      "Id": 1,
+      "Nome": "Julio Nogueira",
+      "CPF": "00878495266",
+      "Endereco": "Rua 2, 86"
+    },
+    "Produtos": [
+      {
+        "Produto": {
+          "Id": 2,
+          "Nome": "Areia Média (m³)",
+          "Codigo": "AREIAM3",
+          "Valor": 75.00
+        },
+        "Quantidade": 2,
+        "ValorTotal": 150.00
+      },
+      {
+        "Produto": {
+          "Id": 5,
+          "Nome": "Tela Metálica 1m x 3m",
+          "Codigo": "TELA13",
+          "Valor": 55.00
+        },
+        "Quantidade": 5,
+        "ValorTotal": 275.00
+      }
+    ],
+    "ValorTotal": 425.00,
+    "DataVenda": "2025-08-10T18:56:18.3074653-03:00",
+    "FormaPagamento": 0,
+    "Status": 2
+  },
+  {
+    "Id": 4,
+    "Pessoa": {
+      "Id": 1,
+      "Nome": "Julio Nogueira",
+      "CPF": "00878495266",
+      "Endereco": "Rua 2, 86"
+    },
+    "Produtos": [
+      {
+        "Produto": {
+          "Id": 2,
+          "Nome": "Areia Média (m³)",
+          "Codigo": "AREIAM3",
+          "Valor": 75.00
+        },
+        "Quantidade": 1,
+        "ValorTotal": 75.00
+      }
+    ],
+    "ValorTotal": 75.00,
+    "DataVenda": "2025-08-10T19:08:40.5943933-03:00",
+    "FormaPagamento": 0,
+    "Status": 1
+  },
+  {
+    "Id": 5,
+    "Pessoa": {
+      "Id": 2,
+      "Nome": "Amanda Ramos",
+      "CPF": "04150250368",
+      "Endereco": "Travessa Aracaju, 21"
+    },
+    "Produtos": [
+      {
+        "Produto": {
+          "Id": 9,
+          "Nome": "Ripão 5m (unidade)",
+          "Codigo": "RIP5M",
+          "Valor": 15.00
+        },
+        "Quantidade": 10,
+        "ValorTotal": 150.00
+      },
+      {
+        "Produto": {
+          "Id": 3,
+          "Nome": "Tijolo Cerâmico 6 Furos",
+          "Codigo": "TIJ6F",
+          "Valor": 0.80
+        },
+        "Quantidade": 100,
+        "ValorTotal": 80.00
+      },
+      {
+        "Produto": {
+          "Id": 1,
+          "Nome": "Cimento CP II 50kg",
+          "Codigo": "CIM50KG",
+          "Valor": 28.90
+        },
+        "Quantidade": 1,
+        "ValorTotal": 28.90
+      }
+    ],
+    "ValorTotal": 258.90,
+    "DataVenda": "2025-08-10T19:10:57.5374476-03:00",
+    "FormaPagamento": 1,
+    "Status": 1
+  },
+  {
+    "Id": 6,
+    "Pessoa": {
+      "Id": 3,
+      "Nome": "Celia Nogueira",
+      "CPF": "12942820268",
+      "Endereco": "Rua 2, 86"
+    },
+    "Produtos": [
+      {
+        "Produto": {
+          "Id": 1,
+          "Nome": "Cimento CP II 50kg",
+          "Codigo": "CIM50KG",
+          "Valor": 28.90
+        },
+        "Quantidade": 10,
+        "ValorTotal": 289.00
+      },
+      {
+        "Produto": {
+          "Id": 2,
+          "Nome": "Areia Média (m³)",
+          "Codigo": "AREIAM3",
+          "Valor": 75.00
+        },
+        "Quantidade": 1,
+        "ValorTotal": 75.00
+      },
+      {
+        "Produto": {
+          "Id": 9,
+          "Nome": "Ripão 5m (unidade)",
+          "Codigo": "RIP5M",
+          "Valor": 15.00
+        },
+        "Quantidade": 5,
+        "ValorTotal": 75.00
+      }
+    ],
+    "ValorTotal": 439.00,
+    "DataVenda": "2025-08-10T19:11:42.0489149-03:00",
+    "FormaPagamento": 2,
+    "Status": 2
+  }
+]

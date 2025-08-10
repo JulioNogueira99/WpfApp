@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="WpfApp.Views.CadastroPessoa"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:WpfApp.ViewModels"
+             xmlns:enums="clr-namespace:WpfApp.Enums"
+             Background="White">
+
+    <UserControl.DataContext>
+        <vm:PessoaViewModel/>
+    </UserControl.DataContext>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Cadastro de Pessoas" FontSize="16" FontWeight="Bold" Grid.Row="0" Margin="0,0,0,5"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,25,0,10" VerticalAlignment="Center">
+            <Label Content="Nome:" VerticalAlignment="Center"/>
+            <TextBox Text="{Binding FiltroNome, UpdateSourceTrigger=PropertyChanged}" Width="150" Margin="5,0,15,0"/>
+            <Label Content="CPF:" VerticalAlignment="Center"/>
+            <TextBox Text="{Binding FiltroCPF, UpdateSourceTrigger=PropertyChanged}" Width="150" Margin="5,0,15,0"/>
+        </StackPanel>
+
+        <DataGrid ItemsSource="{Binding PessoasFiltradas}" SelectedItem="{Binding PessoaSelecionada, Mode=TwoWay}"
+                  AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Grid.Row="1" Margin="0,0,0,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True" Width="50"/>
+                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="*"/>
+                <DataGridTextColumn Header="CPF" Binding="{Binding CPF}" Width="150"/>
+                <DataGridTextColumn Header="Endereço" Binding="{Binding Endereco}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="2" Margin="0,0,0,10">
+            <Button Content="Incluir Pessoa" Command="{Binding IncluirCommand}" Width="100" Margin="0,0,5,0"/>
+            <Button Content="Editar Pessoa" Command="{Binding EditarCommand}" Width="100" Margin="0,0,5,0"/>
+            <Button Content="Excluir Pessoa" Command="{Binding ExcluirCommand}" Width="100"/>
+        </StackPanel>
+
+        <Separator Grid.Row="3" Margin="0,10"/>
+
+        <TextBlock Text="Pedidos da Pessoa Selecionada" FontSize="16" FontWeight="Bold" Grid.Row="4" Margin="0,10,0,5"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="4" Margin="0,35,0,5" VerticalAlignment="Center">
+            <Label Content="Filtrar pedidos por status:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <ComboBox Width="150" SelectedItem="{Binding FiltroStatusPedido}" >
+                <ComboBox.ItemsSource>
+                    <x:Array Type="{x:Type enums:StatusPedido}">
+                        <enums:StatusPedido>Pendente</enums:StatusPedido>
+                        <enums:StatusPedido>Pago</enums:StatusPedido>
+                        <enums:StatusPedido>Enviado</enums:StatusPedido>
+                        <enums:StatusPedido>Recebido</enums:StatusPedido>
+                    </x:Array>
+                </ComboBox.ItemsSource>
+            </ComboBox>
+            <Button Content="Limpar filtro" Margin="10,0,0,0" Width="100" Click="BtnLimparFiltroPedidos_Click"/>
+            <Button Content="Incluir Pedido" Command="{Binding IncluirPedidoCommand}" Width="120" Margin="20,0,0,0"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="5" ItemsSource="{Binding PedidosPessoaFiltrados}" 
+          AutoGenerateColumns="False" 
+          SelectionMode="Single" 
+          IsReadOnly="True" 
+          Margin="0,5,0,0"
+          CanUserAddRows="False" 
+          CanUserDeleteRows="False"
+          SelectionUnit="FullRow"
+          ColumnWidth="*">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Data da Venda" Binding="{Binding DataVenda, StringFormat=d}" Width="150"/>
+                <DataGridTextColumn Header="Valor Total" Binding="{Binding ValorTotal, StringFormat=C}" Width="130"/>
+                <DataGridTextColumn Header="Forma de Pagamento" Binding="{Binding FormaPagamento}" Width="180"/>
+
+                <DataGridTemplateColumn Header="Status" Width="*" MinWidth="150">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid Margin="0" HorizontalAlignment="Stretch">
+                                <ComboBox
+                            ItemsSource="{Binding DataContext.StatusAlteraveis, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                            SelectedItem="{Binding Status, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            Visibility="{Binding Status, Converter={StaticResource StatusPendenteToVisibilityConverter}}"
+                            HorizontalAlignment="Stretch"
+                            Margin="4,0,4,0"
+                            SelectionChanged="ComboBox_SelectionChanged"
+                            PreviewMouseLeftButtonDown="ComboBox_PreviewMouseLeftButtonDown"
+                        />
+                                <TextBlock
+                            Text="{Binding Status}"
+                            Visibility="{Binding Status, Converter={StaticResource StatusNaoPendenteToVisibilityConverter}}"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            FontWeight="SemiBold"
+                            Foreground="DarkSlateGray"/>
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
+
+    </Grid>
+</UserControl>
